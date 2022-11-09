@@ -1,5 +1,5 @@
 from dynamic_functions import check_3Digits, all_positives, sum_less, count_even
-from function_interactions import throw_dices,mix_sticks
+from function_interactions import throw_dices,mix_sticks, try_your_luck, verify_number
 
 
 
@@ -35,9 +35,11 @@ from function_interactions import throw_dices,mix_sticks
 # throw_dices()
 sticks=['-','--','---','----','-----']
 my_mix=mix_sticks(sticks)
-print(my_mix)
-  
-
+# print(my_mix)
+guess=try_your_luck()
+print(guess)
+verify=verify_number(sticks,guess)
+print(verify)
 
 
 

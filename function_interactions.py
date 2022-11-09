@@ -19,11 +19,20 @@ def mix_sticks(my_list):
 
 
 #choose a number
-
+def try_your_luck():
+  a_try=''
+  while a_try not in ['1','2','3','4',"5"]:
+    a_try=input('choose a number:')
+  return int(a_try)
 
 
 #verify the number
-
+def verify_number(sticks,guess):
+  if sticks[guess-1]=='-':
+    print('wash the dishes')
+  else:
+    print('this time you are lucky')
+  print(f'you got {sticks[guess-1]}')
 
 
 #####################################################################################################
